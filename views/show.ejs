@@ -1,0 +1,54 @@
+<% include partials/header%>
+
+
+<div class="container">
+
+	<div class="row">
+		<div class=" col-sm-4">
+			<a href="#" class="thumbnail">
+      			<img class="img-responsive" src="<%=card.picture%>" alt="<%=card.picture%>">
+    		</a>
+		</div>
+
+		<div class=" col-sm-8">
+			<h1><%=card.company%></h1>
+			<a href="#"><%=card.website%></a>
+
+			<h4><%=card.about%></h4>
+
+			<div class="row">
+				<div class=" col-sm-8">
+					<h2>Contact Us</h2>
+					<h3><%=card.email%></h3>
+					<h3><%=card.phone%></h3>
+					<h4><%=card.street_address%>, <%=card.city%>, <%=card.state%>, <%=card.zip%> </h4>
+				</div>
+
+				<div class=" col-sm-4">
+					<div id="map"></div>
+					<script>
+					  function initMap() {
+					    var uluru = {lat: <%=parseFloat(card.latitude)%>,lng: <%=parseFloat(card.longitude)%> };
+
+					    var map = new google.maps.Map(document.getElementById('map'), {
+					      zoom: 8,
+					      center: uluru
+					    });
+					    var marker = new google.maps.Marker({
+					      position: uluru,
+					      map: map
+					    });
+					  }
+					</script>
+					<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ7EhLOakBbLaCPvNvjMRjJ4IXgZFS1c4&callback=initMap">
+					</script>	
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+
+<% include partials/footer%>

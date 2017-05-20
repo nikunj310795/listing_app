@@ -1,0 +1,28 @@
+{
+  "name": "listing_app",
+  "version": "1.0.0",
+  "description": "Business Listing App",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikunj310795/listing_app.git"
+  },
+  "author": "Nikunj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikunj310795/listing_app/issues"
+  },
+  "homepage": "https://github.com/nikunj310795/listing_app#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.9"
+  }
+}

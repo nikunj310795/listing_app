@@ -1,0 +1,48 @@
+<% include partials/header %>
+
+
+<div class="container">
+	<h1>Welcome to the Homepage</h1>
+	<div class="row ">
+		<div class=" col-sm-4 " >
+			<ul class="nav nav-pills nav-stacked">
+  				<li role="presentation" class="active"><a href="#">All</a></li>
+  				<li role="presentation"><a href="#">Accounting</a></li>
+  				<li role="presentation"><a href="#">Dealerships</a></li>
+  				<li role="presentation"><a href="#">Restaurants</a></li>
+  				<li role="presentation"><a href="#">Software Solutions</a></li>
+  				<li role="presentation"><a href="#">Furnishing</a></li>
+			</ul>
+		</div>
+
+		<div class="col-sm-8 " >
+			<div class="row " style="display:flex; flex-wrap: wrap;">
+
+			<% cards.forEach(function(card){ %>
+	  			<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img src="<%=card.picture%>" alt="<%=card.picture%>">
+						<div class="caption">
+							<h3><%=card.company%></h3>
+
+							<p><%=card.phrase%></p>
+							<p>
+								<a href="/home/<%=card._id%>" class="btn btn-primary" role="button">Know More!!!!</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			<% });%>
+
+
+			</div>	
+		</div>		
+	</div>
+</div>
+	
+
+
+<% include partials/footer %>
+	
+
+	
