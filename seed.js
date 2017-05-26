@@ -11,10 +11,10 @@ var category=['software','furnishing','dealership','restaurant','accounting'];
 
 data=[];
 
-for(var i=0;i<7;i++){
+for(var i=0;i<15;i++){
 
 	content={
-		picture: 'http://www.lorempixel.com/480/640/business/'+i,
+		picture: 'http://www.lorempixel.com/480/480/',
 		company: faker.Company.companyName(),
 		email: faker.Internet.email(),
 		website:faker.Internet.domainName(),
