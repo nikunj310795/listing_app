@@ -23,3 +23,8 @@ body {
    background-color: grey;
  }
 
+.pager .active a{
+    background-color : #337AB7;
+    color: #FFF;
+    border: 0px;
+}

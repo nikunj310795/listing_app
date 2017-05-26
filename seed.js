@@ -11,7 +11,7 @@ var category=['software','furnishing','dealership','restaurant','accounting'];
 
 data=[];
 
-for(var i=0;i<15;i++){
+for(var i=0;i<29;i++){
 
 	content={
 		picture: 'http://www.lorempixel.com/480/480/',
